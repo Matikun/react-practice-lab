@@ -1,4 +1,4 @@
-import BigList from "../examples/memo-list/MemoList";
+import BigList from "../examples/rendering-optimizations/memo-list/MemoList";
 
 export default function MemoListPage() {
   return (
