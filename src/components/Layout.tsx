@@ -33,6 +33,12 @@ export function Layout({ children }: Props) {
             >
               useMemo
             </Link>
+            <Link
+              to="/use-callback"
+              className="text-sm text-gray-300 hover:text-white transition-colors"
+            >
+              useCallback
+            </Link>
           </nav>
         </div>
       </header>
