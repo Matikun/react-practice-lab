@@ -3,8 +3,9 @@ import HomePage from "./pages/HomePage";
 import MemoListPage from "./pages/MemoListPage";
 import UseMemoPerformancePage from "./pages/useMemoPage";
 
-import UseCallbackPage from "./pages/useCallbackPage";
 import { Layout } from "./components/Layout";
+import UseCallbackPage from "./pages/UseCallbackPage";
+import { ModalDemoPage } from "./pages/ModalDemoPage";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/memo-list" element={<MemoListPage />} />
         <Route path="/use-memo" element={<UseMemoPerformancePage />} />
         <Route path="//use-callback" element={<UseCallbackPage />} />
+        <Route path="/modal-demo" element={<ModalDemoPage />} />
       </Routes>
     </Layout>
   );

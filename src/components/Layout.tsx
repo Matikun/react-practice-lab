@@ -39,6 +39,12 @@ export function Layout({ children }: Props) {
             >
               useCallback
             </Link>
+            <Link
+              to="/modal-demo"
+              className="text-sm text-gray-300 hover:text-white transition-colors"
+            >
+              Modal Portal
+            </Link>
           </nav>
         </div>
       </header>
