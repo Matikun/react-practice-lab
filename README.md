@@ -65,6 +65,46 @@ React Profiler integration
 
 ---
 
+### Custom Hooks
+
+#### useDebounce
+
+The `useDebounce` hook is a utility for debouncing a value. It delays updating the value until after a specified delay has passed since the last change.
+
+**Usage:**
+
+```tsx
+import useDebounce from './hooks/useDebounce';
+
+const Component = () => {
+  const [value, setValue] = useState('');
+  const debouncedValue = useDebounce(value, 500);
+
+  return (
+    <div>
+      <input
+        type="text"
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
+        placeholder="Type something..."
+      />
+      <p>Debounced Value: {debouncedValue}</p>
+    </div>
+  );
+};
+```
+
+**Parameters:**
+- `value` (any): The value to debounce.
+- `delay` (number): The debounce delay in milliseconds.
+
+**Returns:**
+- The debounced value.
+
+This hook is particularly useful for optimizing performance in scenarios like search inputs or API calls triggered by user input.
+
+---
+
 🙌 Contributing
 
 This is a personal project, but feel free to fork and play with it! Suggestions and improvements are welcome via pull requests or issues.
