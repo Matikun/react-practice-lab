@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import MemoListPage from "./pages/MemoListPage";
 import UseMemoPerformancePage from "./pages/useMemoPage";
+import DebounceExamplePage from "./pages/DebounceExamplePage";
 
 import { Layout } from "./components/Layout";
 import UseCallbackPage from "./pages/UseCallbackPage";
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/use-memo" element={<UseMemoPerformancePage />} />
         <Route path="//use-callback" element={<UseCallbackPage />} />
         <Route path="/modal-demo" element={<ModalDemoPage />} />
+        <Route path="/debounce-example" element={<DebounceExamplePage />} />
       </Routes>
     </Layout>
   );
